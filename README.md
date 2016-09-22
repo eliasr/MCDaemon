@@ -1,2 +1,8 @@
 # MCDaemon
-An application that allows for swithing between and interacting with active services though a webbrowser.
+MCDaemon aims to be a simple light-weight solution that allows users to switch between selected services though a web browser, and allow home users as well as small sized hosts who seek to rent service hosting though economical computers such as the Intel NUC Mini PC, free of charge.
+
+Usually it is necessary for an administrator to manually switch between services as it is needed for their users, requiring time and availability, which in turn becomes both a burden for the administrator and the users. As alternative an administrator can use a variety of remote desktop applications that allow for full control of the computer, or potentially a larger server management solution. Both alternatives might significantly reduce the performance of the system and not all of them are free.
+
+The primary focus of MCDaemon is to allow small systems with limited resources to provide multiple services, however, limited to one service at a time. This allows for running performance draining services on demand, such as game servers or services that would be interesting to only run for a limited time, such as cost based or sensitive services. At the same time the user control is limited to the services that the administrator has selected, providing fewer risks for the administrator and increasing the potential user base.
+
+Though updates, the goal is to expand the features, so the administrators can have more control of their server management. The current version is trust based and thereby could be abused, but limited to the selected services. Therefor I highly suggest not to use sensitive services that could provide any critical control of the system. A login module will be provided in the future, that allows for user groups and limiting access to the services its interaction.
