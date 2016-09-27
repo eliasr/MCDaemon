@@ -103,25 +103,15 @@ private string strError = @"<html>
 
                     try
                     {
-                        // Use the Pending method to poll the underlying socket instance for client connection requests.
-
-                        if (tcpListener.Pending())
+                        //Accept the pending client connection and return a TcpClient object initialized for communication.
+                        TcpClient tcpClient = tcpListener.AcceptTcpClient();
+                        TcpUser user = new TcpUser(tcpClient);
+                        connections.Add(user);
+                        Task.Factory.StartNew(() =>
                         {
-                            //Accept the pending client connection and return a TcpClient object initialized for communication.
-                            TcpClient tcpClient = tcpListener.AcceptTcpClient();
-                            // Using the RemoteEndPoint property.
-                            //Console.WriteLine("I am listening for connections on " +
-                            //                            IPAddress.Parse(((IPEndPoint)tcpListener.LocalEndpoint).Address.ToString()) +
-                            //                               "on port number " + ((IPEndPoint)tcpListener.LocalEndpoint).Port.ToString());
-                            TcpUser user = new TcpUser(tcpClient);
-                            connections.Add(user);
-                            Task.Factory.StartNew(() =>
-                            {
-                                ClientThread(user);
-                            });
-                            Server.Instance.UpdateHTML();
-                        }
-
+                            ClientThread(user);
+                        });
+                        Server.Instance.UpdateHTML();
                     }
                     catch (SocketException e)
                     {

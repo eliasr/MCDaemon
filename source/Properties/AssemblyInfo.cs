@@ -9,7 +9,7 @@ using System.Resources;
 [assembly: AssemblyTitle("MCDaemon")]
 [assembly: AssemblyDescription("An application that allows for swithing between and interacting with active services though a webbrowser.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Ringhauge.dk")]
 [assembly: AssemblyProduct("MCDaemon")]
 [assembly: AssemblyCopyright("Elias Ringhauge")]
 [assembly: AssemblyTrademark("")]
@@ -34,5 +34,5 @@ using System.Resources;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.1.8")]
 [assembly: NeutralResourcesLanguageAttribute("en")]

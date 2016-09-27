@@ -54,7 +54,7 @@
     <StartupObject>MCDaemon.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>modem_blue.ico</ApplicationIcon>
+    <ApplicationIcon>Images\modem_blue.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
@@ -167,11 +167,9 @@
     <Content Include="modem_blue.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo.bmp" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Images\logo.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
